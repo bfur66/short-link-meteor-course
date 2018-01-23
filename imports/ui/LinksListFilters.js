@@ -35,7 +35,7 @@ export default class LinksListFilters extends Component {
               Session.set("showVisible", !e.target.checked);
             }}
           />
-          show hidden link
+          show hidden links
         </label>
       </div>
     );
