@@ -13,7 +13,6 @@ export class Login extends Component {
 
   componentWillMount() {
     if (Meteor.userId()) {
-      console.log("user logged in");
       this.props.history.replace("/links");
     }
   }
@@ -30,8 +29,6 @@ export class Login extends Component {
       } else {
         this.setState({ error: "" });
       }
-
-      console.log("Login Callback", err);
     });
   };
 

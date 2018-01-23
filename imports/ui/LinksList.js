@@ -17,7 +17,6 @@ export class LinksList extends Component {
   }
 
   componentDidMount() {
-    console.log("componentDidMount LinksList");
     this.linksTracker = Tracker.autorun(() => {
       Meteor.subscribe("links");
       let links = Links.find({ visible: Session.get("showVisible") }).fetch();
@@ -26,7 +25,6 @@ export class LinksList extends Component {
   }
 
   componentWillUnmount() {
-    console.log("componentWillUnmount LinksList");
     this.linksTracker.stop();
   }
 
