@@ -20,6 +20,7 @@ h1 {
 h2 {
   font-size: $large-font-size;
   margin-bottom: $space;
+  word-wrap: break-word;
 }
 
 a {
